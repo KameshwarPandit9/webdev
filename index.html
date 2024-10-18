@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook-like Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            background-color: #1877f2;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header img {
+            width: 50px;
+            margin-left: 20px;
+            transform-style: preserve-3d;
+            transform: rotateY(0deg);
+            transition: transform 0.5s;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .header img:hover {
+            transform: rotateY(360deg);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: black; /* Facebook name in black color */
+            margin-bottom: 20px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        .login-container input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #165fc4;
+        }
+
+        .login-container .forgot-signup {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .login-container .forgot-signup a {
+            color: #1877f2;
+            text-decoration: none;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #65676b;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
+    </div>
+
+    <div class="login-container">
+        <h1>Facebook</h1>
+        <form action="#">
+            <input type="text" name="email" placeholder="Username or Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Log In">
+        </form>
+        <div class="forgot-signup">
+            <a href="#">Forgot Password?</a>
+            <a href="#">Sign Up for Facebook</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 Facebook-like Website
+    </div>
+
+</body>
+</html>
